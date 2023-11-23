@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --blue-cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --bg-cream: hsl(27, 66%, 92%);
+    --vary-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+    background-color: var(--bg-cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section article:first-child {
+    background-color: var(--soft-red);
+    height: fit-content;
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 1rem;
+}
+
+
+.left_container {
+    color: var(--vary-pale-orange);
+}
+
+.left_container p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.left_container h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+section article:last-child {
+    background-color: var(--vary-pale-orange);
+    height: fit-content;
+    width: 540px;
+    border-radius: 1rem;
+    margin-top: 24px;
+    padding: 40px;
+}
+
+section article:last-child h2 {
+    text-align: start;
+    color: var(--dark-brown);
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.graphic {
+    display: flex;
+    height: 180px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.graphic p {
+    color: var(--medium-brown);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--dark-brown);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+  }
+
+.mon {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra1 {
+    background-color: var(--soft-red);
+    height: 50px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra1:hover {
+    opacity: .8;
+}
+
+.tue {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra2 {
+    background-color: var(--soft-red);
+    height: 100px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra2:hover {
+    opacity: .8;
+}
+
+.wed {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra3 {
+    background-color: var(--soft-red);
+    height: 150px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra3:hover {
+    opacity: .8;
+}
+
+.thu {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra4 {
+    background-color: var(--soft-red);
+    height: 90px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra4:hover {
+    opacity: .8;
+}
+
+.fri {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra5 {
+    background-color: var(--soft-red);
+    height: 70px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra5:hover {
+    opacity: .8;
+}
+
+.sat {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra6 {
+    background-color: var(--soft-red);
+    height: 125px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra6:hover {
+    opacity: .8;
+}
+
+.sun {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.barra7 {
+    background-color: var(--soft-red);
+    height: 75px;
+    width: 50px;
+    border-radius: .3rem;
+}
+
+.barra7:hover {
+    opacity: .8;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.end_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    height: fit-content;
+}
+
+.left_end_container p {
+    color: var(--medium-brown);
+}
+
+.left_end_container h3 {
+    font-size: 34px;
+    color: var(--dark-brown);
+}
+
+.right_end_container span {
+    color: var(--dark-brown);
+    font-weight: 700;
+}
+
+.right_end_container p {
+    color: var(--medium-brown);
+}
+
+
+
+@media screen and (max-width: 560px) {
+    section article:first-child {
+        width: 345px;
+    }
+
+    section article:last-child {
+        width: 345px;
+    }
+
+    .barra1 {
+        width: 33px;
+    }
+    .barra2 {
+        width: 33px;
+    }
+    .barra3 {
+        width: 33px;
+    }
+    .barra4 {
+        width: 33px;
+    }
+    .barra5 {
+        width: 33px;
+    }
+    .barra6 {
+        width: 33px;
+    }
+    .barra7 {
+        width: 33px;
+    }
+}

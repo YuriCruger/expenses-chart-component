@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+
+</head>
+
+<body>
+  <div class="tooltip"></div>
+    <section>
+      <article>
+        <div class="left_container">
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div>
+        <div class="right_container">
+          <img src="./images/logo.svg" alt="Logo">
+        </div>
+      </article>
+  
+      <article>
+        <h2> Spending - Last 7 days</h2>
+        <div class="graphic">
+          
+          <div class="mon" onmouseover="showTooltip(this, 'mon')" onmouseout="hideTooltip()">
+            <p>mon</p>
+            <div class="barra barra1"></div>
+          </div>
+          
+          <div class="tue" onmouseover="showTooltip(this, 'tue')" onmouseout="hideTooltip()">
+            <p>tue</p>
+            <div class="barra barra2"></div>
+          </div>
+          
+          <div class="wed" onmouseover="showTooltip(this, 'wed')" onmouseout="hideTooltip()">
+            <p>wed</p>
+            <div class="barra barra3"></div>
+          </div>
+          
+          <div class="thu" onmouseover="showTooltip(this, 'thu')" onmouseout="hideTooltip()">
+            <p>thu</p>
+            <div class="barra barra4"></div>
+          </div>
+          
+          <div class="fri" onmouseover="showTooltip(this, 'fri')" onmouseout="hideTooltip()">
+            <p>fri</p>
+            <div class="barra barra5"></div>
+          </div>
+          
+          <div class="sat" onmouseover="showTooltip(this, 'sat')" onmouseout="hideTooltip()">
+            <p>sat</p>
+            <div class="barra barra6"></div>
+          </div>
+          
+          <div class="sun" onmouseover="showTooltip(this, 'sun')" onmouseout="hideTooltip()">
+            <p>sun</p>
+            <div class="barra barra7"></div>
+          </div>
+          
+        </div>
+        <hr>
+        <div class="end_container">
+          <div class="left_end_container">
+            <p>Total this month</p>
+            <h3>$478.33</h3>
+          </div>
+          <div class="right_end_container">
+            <span>+2.4%</span>
+            <p>from last month</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script src="/app.js"></script>
+</body>
+
+</html>
